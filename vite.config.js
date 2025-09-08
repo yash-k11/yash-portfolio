@@ -4,6 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '', // This will fix the issue by generating relative paths
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
